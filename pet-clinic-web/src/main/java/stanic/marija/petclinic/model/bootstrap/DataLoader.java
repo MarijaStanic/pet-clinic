@@ -6,8 +6,6 @@ import stanic.marija.petclinic.model.Owner;
 import stanic.marija.petclinic.model.Vet;
 import stanic.marija.petclinic.services.OwnerService;
 import stanic.marija.petclinic.services.VetService;
-import stanic.marija.petclinic.services.map.OwnerServiceMap;
-import stanic.marija.petclinic.services.map.VetServiceMap;
 
 @Component
 public class DataLoader implements CommandLineRunner {
@@ -15,9 +13,9 @@ public class DataLoader implements CommandLineRunner {
     private final OwnerService ownerService;
     private final VetService vetService;
 
-    public DataLoader() {
-        ownerService = new OwnerServiceMap();
-        vetService = new VetServiceMap();
+    public DataLoader(OwnerService ownerService, VetService vetService) {
+        this.ownerService = ownerService;
+        this.vetService = vetService;
     }
 
     @Override

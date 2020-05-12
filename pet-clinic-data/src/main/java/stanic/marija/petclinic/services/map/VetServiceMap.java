@@ -1,10 +1,12 @@
 package stanic.marija.petclinic.services.map;
 
+import org.springframework.stereotype.Service;
 import stanic.marija.petclinic.model.Vet;
 import stanic.marija.petclinic.services.VetService;
 
 import java.util.Set;
 
+@Service
 public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService {
 
     @Override

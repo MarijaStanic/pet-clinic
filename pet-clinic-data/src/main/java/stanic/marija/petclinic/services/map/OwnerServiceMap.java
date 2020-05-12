@@ -1,10 +1,12 @@
 package stanic.marija.petclinic.services.map;
 
+import org.springframework.stereotype.Service;
 import stanic.marija.petclinic.model.Owner;
 import stanic.marija.petclinic.services.OwnerService;
 
 import java.util.Set;
 
+@Service
 public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService {
 
     @Override
