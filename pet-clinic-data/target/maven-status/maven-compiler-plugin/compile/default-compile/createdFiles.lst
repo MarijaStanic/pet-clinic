@@ -1,5 +1,14 @@
+stanic\marija\petclinic\services\VetService.class
+stanic\marija\petclinic\services\map\AbstractMapService.class
+stanic\marija\petclinic\model\Vet.class
+stanic\marija\petclinic\services\CrudService.class
+stanic\marija\petclinic\model\BaseEntity.class
+stanic\marija\petclinic\services\PetService.class
 stanic\marija\petclinic\model\Pet.class
 stanic\marija\petclinic\model\Person.class
 stanic\marija\petclinic\model\PetType.class
-stanic\marija\petclinic\model\Vet.class
+stanic\marija\petclinic\services\map\OwnerServiceMap.class
 stanic\marija\petclinic\model\Owner.class
+stanic\marija\petclinic\services\OwnerService.class
+stanic\marija\petclinic\services\map\PetServiceMap.class
+stanic\marija\petclinic\services\map\VetServiceMap.class
