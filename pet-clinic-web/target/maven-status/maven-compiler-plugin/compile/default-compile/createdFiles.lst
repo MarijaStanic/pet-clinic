@@ -1,0 +1,5 @@
+stanic\marija\petclinic\PetClinicApplication.class
+stanic\marija\petclinic\model\bootstrap\DataLoader.class
+stanic\marija\petclinic\model\controllers\VetController.class
+stanic\marija\petclinic\model\controllers\IndexController.class
+stanic\marija\petclinic\model\controllers\OwnerController.class
