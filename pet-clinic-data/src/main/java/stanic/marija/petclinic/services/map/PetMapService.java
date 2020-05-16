@@ -1,16 +1,16 @@
 package stanic.marija.petclinic.services.map;
 
 import org.springframework.stereotype.Service;
-import stanic.marija.petclinic.model.PetType;
-import stanic.marija.petclinic.services.PetTypeService;
+import stanic.marija.petclinic.model.Pet;
+import stanic.marija.petclinic.services.PetService;
 
-import java.util.AbstractMap;
 import java.util.Set;
 
 @Service
-public class PetTypeServiceMap extends AbstractMapService<PetType, Long> implements PetTypeService {
+public class PetMapService extends AbstractMapService<Pet, Long> implements PetService {
+
     @Override
-    public Set<PetType> findAll() {
+    public Set<Pet> findAll() {
         return super.findAll();
     }
 
@@ -20,17 +20,17 @@ public class PetTypeServiceMap extends AbstractMapService<PetType, Long> impleme
     }
 
     @Override
-    public void delete(PetType object) {
+    public void delete(Pet object) {
         super.delete(object);
     }
 
     @Override
-    public PetType save(PetType object) {
+    public Pet save(Pet object) {
         return super.save(object);
     }
 
     @Override
-    public PetType findById(Long id) {
+    public Pet findById(Long id) {
         return super.findById(id);
     }
 }
