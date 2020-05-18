@@ -23,12 +23,15 @@ public class Owner extends Person {
         this.address = address;
         this.city = city;
         this.telephone = telephone;
-        this.pets = pets;
+        if(pets != null) {
+            this.pets = pets;
+        }
     }
     private String address;
     private String city;
 
     private String telephone;
+    
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "owner")
     private Set<Pet> pets = new HashSet<>();
 
